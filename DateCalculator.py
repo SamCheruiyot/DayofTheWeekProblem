@@ -11,7 +11,7 @@ def switch(h):
         6:"Friday",
 
     }[h]
-def zellercongruence(day,month,year):
+def DateCalculator(day,month,year):
     if (month==1):
         month=13
         year=year-1
@@ -26,7 +26,7 @@ def zellercongruence(day,month,year):
     j=year//100
     h=q+13*(m+1)//5+k+k//4+j//4+5*j
     h=h%7
-    print(switch(h))
+    print(DateCalculator(h))
 
-zellercongruence(1,5,2025)
+DateCalculator(1,5,2025)
 
